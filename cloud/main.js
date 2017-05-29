@@ -836,29 +836,29 @@ function sendAllMessage(request){
     Parse.Promise.when(listFunctionsToCall).then(
 		function(results){
 			"use strict";
-			//console.log("listFunctionsToCall");
-			//console.log("results: " );
-			//console.log(results );
+			console.log("listFunctionsToCall");
+			console.log("results: " );
+			console.log(results );
 			
 			var results1 = results[0];
-			//console.log("results1: ");
-			//console.log(results1);
-			// console.log('results1 == ' + JSON.stringify(results1));
+			console.log("results1: ");
+			console.log(results1);
+			console.log('results1 == ' + JSON.stringify(results1));
 
 			var objectRequest = results[1];
-			//console.log("objectRequest: ");
-			//console.log(objectRequest);
-			// console.log('objectRequest == ' + JSON.stringify(objectRequest));
+			console.log("objectRequest: ");
+			console.log(objectRequest);
+			console.log('objectRequest == ' + JSON.stringify(objectRequest));
 			
 			var objectOffer = results[2];
-			//console.log("objectOffer: ");
-			//console.log(objectOffer );  
-			// console.log('objectOffer == ' + JSON.stringify(objectOffer));
+			console.log("objectOffer: ");
+			console.log(objectOffer );  
+			console.log('objectOffer == ' + JSON.stringify(objectOffer));
 			
 			var results4 = results[3];
-			// console.log('results4 == ' + JSON.stringify(results4));
-			//console.log("results4: ");
-			//console.log(results4 );  
+			console.log('results4 == ' + JSON.stringify(results4));
+			console.log("results4: ");
+			console.log(results4 );  
 			//------------------------------------------------------//
 			// START SET VARIABLES
 			//------------------------------------------------------//
