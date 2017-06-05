@@ -55,6 +55,13 @@
     initialize: function(domainName, apiKey) {
       domain = domainName;
       key = apiKey;
+     
+     console.log("param-domainName: " + domainName);
+     console.log("param-apiKey: " + apiKey);
+     
+     console.log("global-domainName: " + domain);
+     console.log("global-apiKey: " + key);
+     
       return this;
     },
  
@@ -69,7 +76,10 @@
      */
     sendEmail: function(params, options) {
      
+     console.log("params: " + params);
+     
      console.log("url sendEmail: "+"https://api:" + key + "@" + url + "/" + domain + "/messages");
+     
       return Parse.Cloud.httpRequest({
         method: "POST",
         url: "https://api:" + key + "@" + url + "/" + domain + "/messages",
